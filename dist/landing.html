@@ -3,9 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dhiraj landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
-<body>
+<body class="bg-gradient-to-t from-[#ff4e50] to-[#f9d423]">
+    <!-- nav starts here  -->
+     <nav class="w-full h-14 bg-green-950 absolute flex justify-between items-center px-4 md:px-4">
+        <div class="text-4xl text-orange-700 font-bold">DJ</div>
+        <div>
+            <ul class="hidden md:flex font-semibold text-white">
+                <li class="mx-[10px] cursor-pointer">Home</li>
+                <li class="mx-[10px] cursor-pointer">About</li>
+                <li class="mx-[10px] cursor-pointer">Contacts</li>
+            </ul>
+        </div>
+        <div class="flex space-x-3 justify-center align-center">
+            <button class="bg-orange-700 rounded-lg font-semibold p-1 md:block my-auto">Login/SignUp</button>
+            <div class="md:hidden">
+                <!-- <a class="font-semibold text-4xl hover:text-white" href="#">&#8801;</a> -->
+                <button onclick="handle()">
+                    <ion-icon name="menu-outline" class="text-4xl"></ion-icon>
+                </button>
+                <!-- <a class="font-semibold text-3xl hover:text-white" href="#">X</a> -->
+            </div>
+            <div id="nav-item" class="md:hidden">
+                <button onclick="handle()">
+                    <ion-icon name="close-outline" class="text-4xl hidden"></ion-icon>
+                </button>
+                
+            </div>
+        </div>
+        <!-- <div class="fixed inset-0 bg-red-700 "> -->
+
+        </div>
+     </nav>
+     <!-- nav ends here  -->
+
+     <!-- hero section start  -->
+     <header class="w-full h-auto">
+         <img class="w-full h-screen hidden md:block" src="https://images.pexels.com/photos/147411/italy-mountains-dawn-daybreak-147411.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" srcset="">
+         <img class="md:hidden h-screen w-full" src="https://images.pexels.com/photos/1486974/pexels-photo-1486974.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" srcset="">
+    </header>
+    <!-- hero section ends  -->
     
+    <!-- Student section  -->
+     <div class="w-full my-8">
+        <div class="text-center flex justify-center flex-col align-center items-center">
+            <p class="text-orange-700 text-3xl md:text-4xl">"Traveling is the only thing to do"</p>
+            <div class="h-1 w-36 rounded-lg mt-2 md:mt-3 bg-yellow-500 mb-12"></div>
+        </div>
+        <div class="w-full flex flex-wrap justify-evenly">
+            <div class="w-46 flex flex-col items-center mb-12">
+                <img class="w-48 h-44" src="https://img.icons8.com/?size=100&id=3PlbvwKhRwS5&format=png&color=000000" alt="powerpuff" srcset="">
+                <p class="text-3xl text-white font-bold">Bubbles</p>
+                <p class="text-gray-500 font-bold">Lorem ipsum dolor</p>
+            </div>
+            <div class="w-48 flex flex-col items-center mb-12">
+                <img class="w-44 h-44" src="https://img.icons8.com/?size=100&id=QOefOLmbVj2e&format=png&color=000000" alt="powerpuff" srcset="">
+                <p class="text-3xl text-white font-bold">Blossom</p>
+                <p class="text-gray-500 font-bold">Lorem ipsum dolor</p>
+            </div>
+            <div class="w-48 flex flex-col items-center mb-12">
+                <img class="w-44 h-44" src="https://img.icons8.com/?size=100&id=rcT4q7jWSuFt&format=png&color=000000" alt="powerpuff" srcset="">
+                <p class="text-3xl text-white font-bold">Buttercup</p>
+                <p class="text-gray-500 font-bold">Lorem ipsum dolor</p>
+            </div>
+        </div>
+     </div>
+     <!-- Student section over  -->
+
+     <!-- product sections start  -->
+    <div class="w-full flex flex-wrap justify-around">
+        <div class="w-64 flex flex-col items-center p-2 mb-12 border-white border-2 rounded-lg">
+            <img class="w-44 h-44" src="https://img.icons8.com/?size=100&id=SCvjszbhEU54&format=png&color=000000" alt="">
+            <p class="text-white font-bold text-2xl">Jerry Smith</p>
+            <p class="text-gray-500 font-bold">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, dolorum!</p>
+        </div>
+        <div class="w-64 flex flex-col items-center p-2 mb-12 border-white border-2 rounded-lg ">
+            <img class="w-44 h-44" src="https://img.icons8.com/?size=100&id=SCvjszbhEU54&format=png&color=000000" alt="">
+            <p class="text-white font-bold text-2xl">Jerry Smith</p>
+            <p class="text-gray-500 font-bold">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, dolorum!</p>
+        </div>
+        <div class="w-64 flex flex-col items-center p-2 mb-12 border-white border-2 rounded-lg ">
+            <img class="w-44 h-44" src="https://img.icons8.com/?size=100&id=SCvjszbhEU54&format=png&color=000000" alt="">
+            <p class="text-white font-bold text-2xl">Jerry Smith</p>
+            <p class="text-gray-500 font-bold">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, dolorum!</p>
+        </div>
+        <div class="w-64 flex flex-col items-center p-2 mb-12 border-white border-2 rounded-lg ">
+            <img class="w-44 h-44" src="https://img.icons8.com/?size=100&id=SCvjszbhEU54&format=png&color=000000" alt="">
+            <p class="text-white font-bold text-2xl">Jerry Smith</p>
+            <p class="text-gray-500 font-bold">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, dolorum!</p>
+        </div>
+        <div class="w-64 flex flex-col items-center p-2 mb-12 border-white border-2 rounded-lg ">
+            <img class="w-44 h-44" src="https://img.icons8.com/?size=100&id=SCvjszbhEU54&format=png&color=000000" alt="">
+            <p class="text-white font-bold text-2xl">Jerry Smith</p>
+            <p class="text-gray-500 font-bold">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, dolorum!</p>
+        </div>
+    </div> 
+    <!-- product sections ends  -->
+
+
+    <!-- our footer starts here  -->
+    <footer class="bg-gray-900 flex flex-wrap flex-col justify-between w-full text-white md:flex-row px-6 pt-8 md:px-12">
+        <div>
+            <!-- class="flex flex-col font-medium mb-6 items-center md:items-start" -->
+            <img class="w-40 h-16" src="https://img.icons8.com/?size=100&id=3mJmjZ28Ohgw&format=png&color=000000" alt="">
+            <p class="my-3">dhirajkumar1996@gmail.com</p>
+            <img class="w-32 h-32" src="https://img.icons8.com/?size=100&id=YtpeVQhQ8USm&format=png&color=000000" alt="">
+        </div>
+        <div>
+            <h2>Cartoon</h2>
+            <div class="bg-yellow-500 h-1 w-16 mb-6"></div>
+            <p>About us</p>
+            <p>FAQ's</p>
+            <p>Privacy Policy</p>
+        </div>
+        <div>
+            <h2>Cartoon</h2>
+            <div class="bg-yellow-500 h-1 w-16 mb-6"></div>
+            <p>About us</p>
+            <p>FAQ's</p>
+            <p>Privacy Policy</p>
+        </div>
+        <div>
+            <h2>Cartoon</h2>
+            <div class="bg-yellow-500 h-1 w-16 mb-6"></div>
+            <p>About us</p>
+            <p>FAQ's</p>
+            <p>Privacy Policy</p>
+        </div>
+
+    </footer>
 </body>
+<script src="script.js"></script>
 </html>

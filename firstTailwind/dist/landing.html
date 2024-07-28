@@ -28,14 +28,25 @@
                 </button>
                 <!-- <a class="font-semibold text-3xl hover:text-white" href="#">X</a> -->
             </div>
-            <div id="nav-item" class="md:hidden">
-                <button onclick="handle()">
-                    <ion-icon name="close-outline" class="text-4xl hidden"></ion-icon>
-                </button>
+            
+        </div>
+        <!-- mobile nav  -->
+        <div id="nav-item" class="fixed inset-0 md:hidden">
+            <div class="w-full h-14 bg-pink-800 flex justify-between items-center px-4 md:px-4">
+                <div class="text-4xl text-orange-700 font-bold">DJ</div>
+                <div class="md:hidden">
+                    <button onclick="handle()">
+                        <ion-icon name="close-outline" class="text-4xl"></ion-icon>
+                    </button>
+                </div>
+            </div >
+            <div class="bg-white flex flex-col justify-center align-center text-center">
+                <a href="#" class="font-semibold text-xl hover:bg-gradient-to-r from-pink-800 to-red-600 py-4">Home</a>
+                <a href="#" class="font-semibold text-xl hover:bg-gradient-to-r from-pink-800 to-red-600 py-4">About</a>
+                <a href="#" class="font-semibold text-xl hover:bg-gradient-to-r from-green-950 to-red-600 py-4">Projects</a>
+                <a href="#" class="font-semibold text-xl hover:bg-gradient-to-r from-slate-600 to-red-600 py-4">Misc</a>
                 
             </div>
-        </div>
-        <!-- <div class="fixed inset-0 bg-red-700 "> -->
 
         </div>
      </nav>
